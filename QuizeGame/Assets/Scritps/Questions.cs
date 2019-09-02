@@ -15,6 +15,8 @@ public class Questions : MonoBehaviour
     public Image imageHighlight;
     public List<Sprite> spriteList;
     public List<Text> toggleTextList;
+    public AudioClip acCorrect;
+    public AudioClip acWrong;
 
 
     private int _currentQuestionIndex = -1;
@@ -23,6 +25,7 @@ public class Questions : MonoBehaviour
     private List<string> _optionAnswers;
     private Text _textOptionSelected;
     private Animator _animator;
+    private AudioSource _audioSource;
 
     private string _correctAnswer;
     private string _textForQuestion = "What is this picture of?";
@@ -36,6 +39,8 @@ public class Questions : MonoBehaviour
     {
         if (imageQuestion)
             _animator = imageQuestion.GetComponent<Animator>();
+
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -69,11 +74,15 @@ public class Questions : MonoBehaviour
         if (isCorrect)
         {
             imageHighlight.color = new Color32(41, 118, 6, 86);
+            _audioSource.clip = acCorrect;
         }
         else
         {
             imageHighlight.color = new Color32(118, 11, 7, 86);
+            _audioSource.clip = acWrong;
         }
+
+        _audioSource.Play();
 
         imageHighlight.gameObject.SetActive(true);
 
@@ -126,6 +135,7 @@ public class Questions : MonoBehaviour
         if (_currentQuestionIndex >= spriteList.Count)
         {
             GameOver();
+            return;
         }
 
         //set answer
