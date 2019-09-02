@@ -209,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 507097003}
   - component: {fileID: 507097002}
+  - component: {fileID: 507097004}
   m_Layer: 0
   m_Name: Chilli
   m_TagString: Untagged
@@ -280,6 +281,25 @@ Transform:
   m_Father: {fileID: 1266295633}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15.2}
+--- !u!95 &507097004
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507097001}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7607b966ebd9423fbaf97099e95c003, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 533614771}
   - component: {fileID: 533614770}
+  - component: {fileID: 533614772}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -444,6 +465,25 @@ Transform:
   m_Father: {fileID: 1266295633}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -24.56}
+--- !u!95 &533614772
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533614769}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7607b966ebd9423fbaf97099e95c003, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &569052394
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 569052396}
   - component: {fileID: 569052395}
+  - component: {fileID: 569052397}
   m_Layer: 0
   m_Name: Banana
   m_TagString: Untagged
@@ -525,6 +566,25 @@ Transform:
   m_Father: {fileID: 1266295633}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -58.25}
+--- !u!95 &569052397
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569052394}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7607b966ebd9423fbaf97099e95c003, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &609863151
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725376880}
   - component: {fileID: 725376879}
+  - component: {fileID: 725376881}
   m_Layer: 0
   m_Name: Onion
   m_TagString: Untagged
@@ -649,6 +710,25 @@ Transform:
   m_Father: {fileID: 1266295633}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 146}
+--- !u!95 &725376881
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725376878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7607b966ebd9423fbaf97099e95c003, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &782865336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2017221108}
   - component: {fileID: 2017221107}
+  - component: {fileID: 2017221109}
   m_Layer: 0
   m_Name: Grapes
   m_TagString: Untagged
@@ -1143,3 +1224,22 @@ Transform:
   m_Father: {fileID: 1266295633}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.5}
+--- !u!95 &2017221109
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017221106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7607b966ebd9423fbaf97099e95c003, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
