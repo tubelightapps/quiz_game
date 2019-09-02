@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Questions : MonoBehaviour
@@ -38,20 +39,21 @@ public class Questions : MonoBehaviour
     public void NextQuestion()
     {
         //check correct answer
-        if (currentQuestionIndex > 0)
+        if (currentQuestionIndex > -1)
         {
             if (optionSelected.Equals(spriteList[currentQuestionIndex].name))
             {
                 ++correctAnswersCount;
+                Debug.Log("Correct answer -> " + optionSelected);
             }
         }
 
         //set toggle off
-        foreach (Toggle t in  FindObjectsOfType<Toggle>())
+        foreach (Toggle t in FindObjectsOfType<Toggle>())
         {
             t.isOn = false;
         }
-        
+
         goNextButton.SetActive(false);
 
         ++currentQuestionIndex;
@@ -60,6 +62,7 @@ public class Questions : MonoBehaviour
             currentQuestionIndex = 0;
             //game end logic
             Debug.Log("Game end " + correctAnswersCount + " out of " + spriteList.Count);
+            SceneManager.LoadScene("End");
         }
 
         image_Question.sprite = spriteList[currentQuestionIndex];
